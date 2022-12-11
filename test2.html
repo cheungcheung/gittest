@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 元素（标签）选择器 可选择某种标签 */
+        h1{
+            color: blue;     
+        }
+        /* 类（class）选择器 可选择某类标签，class的优先级，因为代码是从上往下执行，所以不同的class有相同的属性，最下面会覆盖上面 */
+        .a{
+            color: red;
+            background-color: yellowgreen;
+        }
+        .b{
+            background-color: black;
+        }
+
+        /* id选择器 */
+        #id{
+            color: blueviolet;
+        }
+
+        /* 伪类选择器 */
+        a:link{
+            color: red;
+        }
+        a:visited{
+            color: blueviolet;
+        }
+        a:hover{
+            color: green;
+        }
+        a:active{
+            color: black;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>1111</h1>
+
+    <h1 class="a b">2222</h1>
+
+    <h2 id="aa">3333</h2>
+
+    <!-- 伪类选择器 -->
+    <a href="http://www.baidu.com">百度</a>
+
+</body>
+</html>
